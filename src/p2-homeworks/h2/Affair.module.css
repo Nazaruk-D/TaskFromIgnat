@@ -1,0 +1,43 @@
+.button {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #bfbfbf 0%, #eb1313 51%, #eb1313 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+.button:hover {
+    background-position: right center;
+}
+
+.td {
+    width: 90px;
+}
+
+.td2 {
+    width: 50px;
+}
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+}
+td {
+    padding: 10px 20px;
+    background: #bfbfbf;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+

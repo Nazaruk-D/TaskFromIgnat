@@ -1,6 +1,7 @@
 import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
+import s from "./Affairs.module.css"
 
 type AffairsPropsType = { // need to fix any
     data: Array <AffairType>
@@ -9,11 +10,11 @@ type AffairsPropsType = { // need to fix any
 }
 
 function Affairs(props: AffairsPropsType) {
-    const mappedAffairs = props.data.map((data: AffairType) => (
+    const mappedAffairs = props.data.map((a: AffairType) => (
         <Affair // should work
-            key={data._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
-            affair={props.data} /*(ранее в скобках было "a")*/
-            deleteAffairCallback={()=>props.deleteAffairCallback(data._id)}
+            key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
+            affair={a} /*(ранее в скобках было "a")*/
+            deleteAffairCallback={()=>props.deleteAffairCallback(a._id)}
         />
     ))
 
@@ -27,10 +28,10 @@ function Affairs(props: AffairsPropsType) {
 
             {mappedAffairs}
 
-            <button onClick={setAll}>All</button>
-            <button onClick={setHigh}>High</button>
-            <button onClick={setMiddle}>Middle</button>
-            <button onClick={setLow}>Low</button>
+            <button onClick={setAll} className={s.button}>All</button>
+            <button onClick={setHigh} className={s.button}>High</button>
+            <button onClick={setMiddle} className={s.button}>Middle</button>
+            <button onClick={setLow} className={s.button}>Low</button>
         </div>
     )
 }
