@@ -18,7 +18,7 @@ function Affair(props: AffairPropsType) {
                 <tr>
                     <td className={s.td}>{props.affair.name}</td>
                     <td className={s.td2}>{props.affair.priority}</td>
-                    <td><button onClick={deleteCallback} className={s.button}>X</button></td>
+                    <td className={s.td2}><button onClick={deleteCallback} className={s.button}>X</button></td>
                 </tr>
                 </tbody>
             </table>

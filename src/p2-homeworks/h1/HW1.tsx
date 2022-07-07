@@ -12,7 +12,7 @@ function HW1() {
     return (
         <div>
             <hr/>
-            homeworks 1
+            <h2>homeworks 1</h2>
             should work (должно работать)
 
             <Message
