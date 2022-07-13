@@ -16,22 +16,21 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, setNameCallbackEnter, addUser, error, totalUsers, users} // деструктуризация пропсов
 ) => {
-    const inputClass = name.length < 4 ? s.error : s.someClass // need to fix with (?:)
+    // const inputClass = name.length < 4 ? s.error : s.someClass // need to fix with (?:)
+    const inputClass = error ? s.error : s.someClass // need to fix with (?:)
 
     return (
         <div>
             <table>
                 <tbody className={s.table}>
-                <tr>
-                    <td className={s.errorText}>{error}
-                    </td>
-                </tr>
+
                 <tr>
                     <td>
                         <input value={name}
                                onChange={setNameCallback}
                                onKeyDown={setNameCallbackEnter}
-                               className={inputClass}/>
+                               className={inputClass}
+                               onBlur={setNameCallback}/>
 
                     </td>
                     <td>
@@ -42,6 +41,10 @@ const Greeting: React.FC<GreetingPropsType> = (
                     </td>
                     <td className={s.totalUsers}>
                         {totalUsers}
+                    </td>
+                </tr>
+                <tr>
+                    <td className={s.errorText}>{error}
                     </td>
                 </tr>
                 {users.map(e => <tr key={e._id}>

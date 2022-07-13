@@ -13,7 +13,6 @@ function HW1() {
         <div>
             <hr/>
             <h2>homeworks 1</h2>
-            should work (должно работать)
 
             <Message
                 avatar={messageData.avatar}

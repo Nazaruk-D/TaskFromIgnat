@@ -21,10 +21,10 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             setName("")
         } else if (name.length < 3) {    // так и не понял, какую команду использовать по минимальной длине строки
             setError("Минимум 4 символа")
-            setName(e.currentTarget.value)
+            setName(e.currentTarget.value.trim())
         } else {
             setError('')
-            setName(e.currentTarget.value)
+            setName(e.currentTarget.value.trim())
         } // need to fix
     }
 
