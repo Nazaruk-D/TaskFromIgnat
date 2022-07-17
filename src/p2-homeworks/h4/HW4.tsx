@@ -4,7 +4,7 @@ import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 
-function HW4() {
+export function HW4() {
     const [text, setText] = useState<string>('')
     const error = text ? '' : 'error'
 
@@ -23,14 +23,13 @@ function HW4() {
         <div>
             <hr/>
             homeworks 4
-
             <div className={s.column}>
                 <SuperInputText
                     value={text}
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // spanClassName={s.testSpanError}
+                    spanClassName={s.testSpanError}
                 />
 
                 <SuperInputText

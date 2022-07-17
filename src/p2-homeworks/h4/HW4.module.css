@@ -10,4 +10,7 @@
 
 .testSpanError {
     color: blue;
+    border-bottom: 3px solid blue;
+    margin-bottom: 20px;
+
 }
