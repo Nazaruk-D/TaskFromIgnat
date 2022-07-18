@@ -5,6 +5,7 @@
     border: 1px solid grey;
     margin-bottom: 43px;
     width: 20%;
+    /*box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.3)*/
 }
 
 .errorInput {
@@ -19,5 +20,7 @@
 .error {
     color: red;
 }
+
+
 
 
