@@ -1,0 +1,15 @@
+.navbar {
+    margin: 10px 10px 10px 5px;
+    /*padding: 10px 10px 10px 10px ;*/
+}
+
+.block {
+
+}
+
+.navText {
+    font-weight: 600;
+    text-decoration: none;
+    color: #444;
+    font-size: 12px;
+}

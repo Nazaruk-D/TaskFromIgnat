@@ -15,86 +15,6 @@
     height: 22px;
 }
 
-/*Новая кнопка*/
-a {
-    position: relative;
-    padding: 20px 40px;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 30px;
-    height: 10px;
-    overflow: hidden;
-    border-radius: 40px;
-    margin-top: -5px;
-    cursor: inherit;
-}
-
-a .inpBut {
-    position: absolute;
-    color: #fff;
-    background-image: none;
-    background-color: transparent;
-    font-size: 15px;
-    font-family: inherit;
-    letter-spacing: 4px;
-    z-index: 1;
-    margin-left: -10px;
-    border: none;
-    cursor: inherit;
-
-}
-
-a .liquid {
-    position: absolute;
-    top: -100px;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background: #4973ff;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
-    transition: .3s;
-}
-
-a .liquid::after,
-a .liquid::before {
-    content: "";
-    width: 200%;
-    height: 200%;
-    position: absolute;
-    top: 0;
-    left: 40%;
-    transform: translate(-50%, -75%);
-    background: #000;
-}
-
-a .liquid::before {
-    border-radius: 45%;
-    background: #4973ff;
-    animation: animate 5s linear infinite;
-}
-
-a .liquid::after {
-    border-radius: 40%;
-    background: white;
-    animation: animate 8s linear infinite;
-}
-
-a:hover .liquid {
-    top: -120px;
-}
-
-@keyframes animate {
-    0% {
-        transform: translate(-50%, -75%) rotate(0deg);
-    }
-    100% {
-        transform: translate(-50%, -75%) rotate(360deg);
-    }
-}
-
-/*Новая нпока/*/
-
 table input {
     border-radius: 50px;
     height: 40px;
@@ -109,4 +29,8 @@ table input {
 .totalUsers {
     font-size: 20px;
     padding-left: 20px;
+}
+
+.button {
+    margin-bottom: 20px;
 }

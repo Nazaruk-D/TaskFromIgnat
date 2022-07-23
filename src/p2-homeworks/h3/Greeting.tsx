@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Greeting.module.css'
 import {UserType} from "./HW3";
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type GreetingPropsType = {
     name: string // need to fix any
@@ -34,10 +35,10 @@ const Greeting: React.FC<GreetingPropsType> = (
 
                     </td>
                     <td>
-                        <a onClick={addUser}>
-                            <button className={s.inpBut}>Add</button>
-                            <div className={s.liquid}></div>
-                        </a>
+                        <SuperButton onClick={addUser}
+                        className={s.button}>
+                            Add
+                        </SuperButton>
                     </td>
                     <td className={s.totalUsers}>
                         {totalUsers}
