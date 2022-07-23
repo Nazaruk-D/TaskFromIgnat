@@ -17,7 +17,7 @@ function Message(props: MessageType) {
                     <img src={props.avatar} className={s.avatarProps} alt=""/>
                 </span>
 
-                <span className={s.textBlock} >
+                <span className={s.textBlock}>
                     <div className={s.nickName}>
                         {props.name}
                     </div>

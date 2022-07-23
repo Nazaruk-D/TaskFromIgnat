@@ -13,14 +13,12 @@ function HW1() {
         <div>
             <hr/>
             <h2>homeworks 1</h2>
-
             <Message
                 avatar={messageData.avatar}
                 name={messageData.name}
                 message={messageData.message}
                 time={messageData.time}
             />
-
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}

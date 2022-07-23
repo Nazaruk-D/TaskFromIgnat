@@ -6,6 +6,7 @@
     margin-bottom: 43px;
     width: 20%;
     /*box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.3)*/
+    outline: none;
 }
 
 .errorInput {
@@ -15,6 +16,7 @@
     border: 1px solid red;
     color: red;
     width: 20%;
+    outline: none;
 }
 
 .error {

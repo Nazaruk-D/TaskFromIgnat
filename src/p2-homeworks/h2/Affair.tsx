@@ -9,7 +9,9 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {props.deleteAffairCallback()}// need to fix
+    const deleteCallback = () => {
+        props.deleteAffairCallback()
+    }// need to fix
 
     return (
         <div>
@@ -18,7 +20,9 @@ function Affair(props: AffairPropsType) {
                 <tr>
                     <td className={s.td}>{props.affair.name}</td>
                     <td className={s.td2}>{props.affair.priority}</td>
-                    <td className={s.td2}><button onClick={deleteCallback} className={s.button}>X</button></td>
+                    <td className={s.td2}>
+                        <button onClick={deleteCallback} className={s.button}>X</button>
+                    </td>
                 </tr>
                 </tbody>
             </table>
