@@ -1,6 +1,5 @@
 {
-  "name": "homeworks",
-  "homepage": "https://Nazaruk-D.github.io/TaskFromIgnat",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,8 +10,8 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "@types/react-router-dom": "^5.3.3",
     "@types/uuid": "^8.3.4",
+    "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
@@ -24,9 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +44,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "@types/react-router-dom": "^5.3.3"
   }
 }
