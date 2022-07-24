@@ -44,7 +44,7 @@ export type MenuActivatorPropsType = {
 const MenuActivator: React.FC<MenuActivatorPropsType> = ({onClick}) => {
 
     return (
-        <span className={s.block} onClick={e => onClick()} ><span className={s.menuActivator}>Menu</span></span>
+        <span className={s.block} onClick={e => onClick()}><span className={s.menuActivator}>Menu</span></span>
     )
 }
 
