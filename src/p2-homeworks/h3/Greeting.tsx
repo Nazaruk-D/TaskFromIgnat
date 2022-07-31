@@ -53,7 +53,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 </tr>)}
                 </tbody>
             </table>
-        </div> // решил реализовать кнопку из Tik-toka, xDD
+        </div>
     )
 }
 

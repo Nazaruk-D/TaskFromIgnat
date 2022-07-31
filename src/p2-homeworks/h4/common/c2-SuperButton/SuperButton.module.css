@@ -1,5 +1,6 @@
 .default {
     margin-top: 20px;
+    margin-left: 5px    ;
     width: 100px;
     display: inline-block;
     color: white;

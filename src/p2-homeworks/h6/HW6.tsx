@@ -10,20 +10,27 @@ function HW6() {
         saveState<string>('editable-span-value', value)
     }
     const restore = () => {
-        // setValue()
+        // let valueAsString = localStorage.getItem('editable-span-value')
+        // if (valueAsString) {
+        //     let newMaxValue = JSON.parse(valueAsString)
+        //     setValue(newMaxValue)
+        // }
+        // debugger
+        // restoreState<string>('editable-span-value', value)
+        setValue(restoreState<string>('editable-span-value', value))
     }
-
+    const enterText = ' enter text...'
     return (
         <div>
             <hr/>
-            homeworks 6
+            <h2> homeworks 6</h2>
 
             {/*should work (должно работать)*/}
             <div>
                 <SuperEditableSpan
                     value={value}
                     onChangeText={setValue}
-                    spanProps={{children: value ? undefined : 'enter text...'}}
+                    spanProps={{children: value ? undefined : enterText}}
                 />
             </div>
             <SuperButton onClick={save}>save</SuperButton>
