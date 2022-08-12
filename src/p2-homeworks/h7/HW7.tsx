@@ -6,7 +6,7 @@ const arr: string [] = ['x', 'y', 'z']
 
 function HW7() {
     const [value, onChangeOption] = useState<string>(arr[1])
-    console.log(value)
+    // console.log(value)
 
     return (
         <div>
