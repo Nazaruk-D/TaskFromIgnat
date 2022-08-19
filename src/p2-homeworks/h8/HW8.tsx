@@ -27,8 +27,8 @@ function HW8() {
         <div key={p._id}>
             <table className={s.table}>
                 <tbody>
-                    <td className={s.td}>{p.name}</td>
-                    <td className={s.td}>{p.age}</td>
+                <td className={s.td}>{p.name}</td>
+                <td className={s.td}>{p.age}</td>
                 </tbody>
             </table>
         </div>
@@ -45,9 +45,9 @@ function HW8() {
             {/*should work (должно работать)*/}
             {finalPeople}
 
-            <span><SuperButton onClick={sortUp} style={{width:"120px"}}>sort up</SuperButton></span>
-            <span><SuperButton onClick={sortDown} style={{width:"120px"}}>sort down</SuperButton></span>
-            <span><SuperButton onClick={sortAge} style={{width:"120px"}}>check 18+</SuperButton></span>
+            <span><SuperButton onClick={sortUp} style={{width: "120px"}}>sort up</SuperButton></span>
+            <span><SuperButton onClick={sortDown} style={{width: "120px"}}>sort down</SuperButton></span>
+            <span><SuperButton onClick={sortAge} style={{width: "120px"}}>check 18+</SuperButton></span>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativePeople/>*/}

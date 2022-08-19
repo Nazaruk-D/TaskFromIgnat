@@ -46,4 +46,11 @@ td {
 
 }
 
+/*Запись для разнесения массива (аналог таблицы)*/
+/*.item {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    width: 200px;*/
+/*    margin-left: 10px;*/
+/*}*/
 

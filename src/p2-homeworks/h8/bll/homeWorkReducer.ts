@@ -10,7 +10,7 @@ export const homeWorkReducer = (state: Array<UserType>, action: homeWorkReducerA
         case 'sort': {
             debugger
             if (action.payload === "up") {
-               return [...state.sort((a, b) => b.age - a.age)]
+                return [...state.sort((a, b) => b.age - a.age)]
             } else if (action.payload === "down") {
                 return [...state.sort((a, b) => a.age - b.age)]
             } else return state

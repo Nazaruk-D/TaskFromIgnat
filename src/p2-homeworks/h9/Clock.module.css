@@ -1,0 +1,18 @@
+.TimeAndDate {
+    /*border: 1px solid black;*/
+    display: flex;
+    align-items: flex-end;
+}
+
+.clock, .date {
+    width: 140px;
+    height: 30px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #5e5e60;
+}
