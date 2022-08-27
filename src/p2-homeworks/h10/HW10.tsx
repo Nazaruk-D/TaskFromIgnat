@@ -1,7 +1,7 @@
 import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
-import {loadingAC, statePropsType} from "./bll/loadingReducer";
+import {loadingAC} from "./bll/loadingReducer";
 import {AppStoreType} from "./bll/store";
 import s from "./HW10.module.css"
 import {CircleLoader} from "react-spinners";
@@ -21,7 +21,7 @@ function HW10() {
             dispatch(loadingAC(false))
         }, 2000)
     };
-
+    console.log(typeof null)
     return (
         <div>
             <hr/>

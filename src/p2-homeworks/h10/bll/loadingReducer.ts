@@ -1,5 +1,3 @@
-import {AppStoreType} from "./store";
-
 export type statePropsType = {
     isLoading: boolean
 }
@@ -22,4 +20,4 @@ export const loadingReducer = (state:statePropsType = initState, action: Loading
     }
 }
 
-export const loadingAC = (isLoading: boolean) => ({type: "LOADING", isLoading})
+export const loadingAC = (isLoading: boolean): LoadingACType => ({type: "LOADING", isLoading})
