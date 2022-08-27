@@ -1,0 +1,11 @@
+.loadingDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+
+.loading {
+    width: 145px;
+    height: 145px;
+}
