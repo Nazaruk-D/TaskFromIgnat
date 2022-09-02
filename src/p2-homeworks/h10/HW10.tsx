@@ -9,7 +9,7 @@ import {CircleLoader} from "react-spinners";
 function HW10() {
     // useSelector, useDispatch
     let loading = useSelector<AppStoreType>(state => state.loading.isLoading)
-    console.log(loading)
+    // console.log(loading)
     const dispatch = useDispatch()
     useDispatch()
 
@@ -21,7 +21,7 @@ function HW10() {
             dispatch(loadingAC(false))
         }, 2000)
     };
-    console.log(typeof null)
+    // console.log(typeof null)
     return (
         <div>
             <hr/>

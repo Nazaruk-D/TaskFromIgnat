@@ -20,7 +20,7 @@ const initialPeople: Array<UserType> = [
 ]
 
 function HW8() {
-    debugger
+    // debugger
     const [people, setPeople] = useState<Array<UserType>>(initialPeople) // need to fix any
     // need to fix any
     const finalPeople = people.map((p: UserType) => (
